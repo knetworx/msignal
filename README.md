@@ -73,3 +73,9 @@ var slot = signal.add(function(s1, s2){ trace(s1 + " " + s2); });
 slot.param1 = "Goodbye";
 signal.dispatch("Hello", "Mr Bond"); // traces: Goodbye Mr Bond
 ```
+
+### Creating the swc:
+
+```
+haxe -cp src -main msignal.Signal -swf signals.swc
+```

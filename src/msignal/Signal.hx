@@ -36,6 +36,10 @@ typedef AnySignal = Signal<Dynamic, Dynamic>;
 @:keepSub
 class Signal<TSlot:Slot<Dynamic, Dynamic>, TListener>
 {
+	public static function main()
+	{
+	}
+
 	public var valueClasses:Array<Dynamic>;
 
 	/**
