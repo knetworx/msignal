@@ -77,5 +77,7 @@ signal.dispatch("Hello", "Mr Bond"); // traces: Goodbye Mr Bond
 ### Creating the swc:
 
 ```
-haxe -cp src -main msignal.Signal -swf signals.swc
+haxe -cp src msignal.Signal -swf signals.swc
+or
+haxe buildswc.hxml
 ```
