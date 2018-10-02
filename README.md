@@ -23,9 +23,13 @@ import msignal.Signal;
 ### Basic usage
 
 ```haxe
-var signal = new Signal0();
-signal.add(function(){ trace("signal dispatched!"); })
-signal.dispatch();
+var signal0 = new Signal0();
+signal0.add(function(){ trace("signal dispatched!"); })
+signal0.dispatch();
+
+var signal1 = new Signal1(int);
+signal1.add(function(val:int){ trace("signal dispatched with int = " + val + "!"); })
+signal1.dispatch();
 ```
 
 ### Extending
